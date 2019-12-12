@@ -1,7 +1,11 @@
 *{box-sizing:border-box;
     font-weight:bold;
-   
-     }
+}
+   #ticket{
+        width: 20px;
+        height: 20px;
+   }
+
      .small_bar {
         padding-top:5px;
         color:#CCAC63;
@@ -56,7 +60,7 @@
 #body1-div {
     display: inline-block;
     width :100%; 
-    height:50%; 
+    height:40%; 
      
     position:relative;
     top:35px;
@@ -64,12 +68,21 @@
     min-width:100%;
     
 }
+.main_logo {
+    
+    width : 100%;
+    height : 500px; 
+    float:left;
+    transform :scale(1.0, 1.0) ; 
+    transition: all 1.0s ease-in 0s;
+   }
+
 #logo{
     
     display: inline-block;
     position: relative;
     left:0;
-    top:35;
+    top:0;
     width: 100%;
     overflow: hidden;
     min-width: 100%;
@@ -77,8 +90,8 @@
     
 
 }
-#logo1:hover { 
-    transform :scale(1.5, 1.6) ; 
+.logo1:hover { 
+    transform :scale(1.3, 1.4) ; 
     transition: all 1.5s ease-out 0s;
     transform-origin : middle;
     
@@ -87,16 +100,16 @@
 }
 
 
-#logo1 {
+.logo1 {
     
     width : 100%;
     height : 300px; 
     float:left;
-    transform :scale(1.1, 1.1) ; 
+    transform :scale(1.0, 1.0) ; 
     transition: all 1.0s ease-in 0s;
    }
 
-#logo1:hover { 
+.logo1:hover { 
    opacity : 0.9;
 }
 
@@ -111,16 +124,17 @@
     display: inline-block;
     position: relative;
     left:0;
-    top:35;
+    top:0;
     width: 100%;
     height:70px;
-    min-width: 100%;
+    
     
     
 
 }
 .banner_ul{
     display:block;
+    
     position: absolute;
     transform: translate(-50%,-50%);
     top:25%;
@@ -130,13 +144,13 @@
 .banner_li{
 
     float:left;
-    margin-right:90px;
+    margin-right:80px;
 }
 
 .banner_a {
     text-decoration: none;
     color: rgb(190, 140, 70);
-    font-size:2rem;
+    font-size:1.5rem;
     font-family: "arial black",sans-serif;
 }
 .banner_a.a:visited {
@@ -145,11 +159,12 @@
 }
 
 #ltop-div {
-
+    min-width: 1500px;
     width:100%;
     height:20%; 
     position: relative;
-    top:35px;
+    top:0px;
+    left:0;
     
     
  }
@@ -177,7 +192,7 @@
     
     float:left;
     margin-right:40px;
-    font-size:3rem;
+    font-size:2rem;
     color:rgb(190, 140, 70);
 }
 #ltop-div_a{
@@ -207,7 +222,7 @@ body{
 }
 #nav-div {
     position: relative;
-    top:35;
+    top:0;
     left:0;
     width : 80%; 
      
@@ -257,7 +272,7 @@ img {
         top:0;
         left:0;
         width:100%; 
-        height:25%;
+        height:30%;
         background-color:#232323;
         color:#777777;
         
