@@ -1,0 +1,238 @@
+
+    <style>
+      body {background-color:#123478; height:80%;}
+      table {
+        
+        width: 100%; height: 60%; float:left; 
+        border-top: 1px solid #444444;
+        border-collapse: collapse;
+        
+      }
+      th, td {
+        border-bottom: 1px solid #444444;
+        padding: 10px;
+        text-align: center;
+       
+      }
+	th {
+   	 background-color:#506EA5;
+ 	 }
+ 	 td {
+    		background-color:#ffffff;}
+  .p_q{
+    font-size:3rem; 
+    text-align:center;
+    font-family:AmaticSC-Bold;
+    display: inline-block;
+    margin-left:100;
+    color:white;
+  }
+	.p_t{font-size:10px;
+    font-family:AmaticSC-Bold;
+    margin-left:100;
+  }
+    
+    a {text-decoration: none;}
+
+ .d_1 {width:100%; height:60%; background-color:white; }
+
+ .modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0,0,0, .6);
+  transition: opacity .25s ease;
+  
+}
+.modal_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  
+}
+.modal-state {
+  display: none;
+}
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal_inner {
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin: auto;
+  overflow: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 60%;
+}
+
+.modal_close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal_close:after,
+.modal_close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal_close:hover:after,
+.modal_close:hover:before {
+  background: #aaa;
+}
+
+.modal_close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+	
+  .modal_inner {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+    
+  }
+}
+
+.btn {
+  cursor: pointer;
+  background: #e6e6e6;
+  display: inline-block;
+  padding: .5em 1em;
+  color: rgb(53, 53, 53);
+  border-radius: 3px;
+
+}
+
+.btn:hover,
+.btn:focus {
+  background: #a7a7a8;
+}
+
+#errorpic {
+  width:900px;
+  height:500px;
+  position:absolute; top:0; left:70;
+  margin:0 auto;
+  padding-top:30;
+}
+
+
+    </style>
+
+    
+      <title>공지 게시판</title>
+      <body>
+        <form>
+          <p class=p_q>공지사항</p>
+          <div class="d_1">
+              <table>
+                  <thead>
+                    <tr>
+                      <th>번호</th><th>내용</th><th>작성자</th><th>날짜</th><th>조회수</th><th>선택</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td><td><a href="공지욕.html" target=notiframe>게시판 관리자가 알립니다~~</a></td><td>박건범</td><td>19년 7월04일</td><td>300</td><td><input type=checkbox value=ex></td>
+                    </tr>
+                    <tr>
+                      <td>2</td><td><a href="공지3.html" target=notiframe>일부 게시판 본문 글목록 삭제</a></td><td>곽진우</td><td>19년 6월17일</td><td>310</td><td><input type=checkbox value=ex></td>
+                    </tr>
+                    <tr>
+                      <td>3</td><td>외부공격에 따른 서비스 장애</td><td>박건범</td><td>19년 6월 16일</td><td>730</td><td><input type=checkbox value=ex></td>
+                    </tr>
+                    <tr>
+                      <td>4</td><td>유튜브 동영상 링크</td><td>이주영</td><td>19년 6월09일</td><td>398</td><td><input type=checkbox value=ex></td>
+                    </tr>
+              <tr>
+                      <td>5</td><td>외국인은 입국신고서 딱 쓰기</td><td>이주영</td><td>19년 6월05일</td><td>398</td><td><input type=checkbox value=ex></td>
+                    </tr>
+              <tr>
+                      <td>6</td><td>좀비랑 맞짱뜨기</td><td>곽진우</td><td>19년 6월03일</td><td>398</td><td><input type=checkbox value=ex></td>
+                    </tr>
+              <tr>
+                      <td>7</td><td>해킹은 나뻐여!~!~</td><td>박건범</td><td>19년 5월28일</td><td>398</td><td><input type=checkbox value=ex></td>
+                    </tr>
+              <tr>
+                      <td>8</td><td>샷건치지말고 여행가라!</td><td>이주영</td><td>19년 5월09일</td><td>398</td><td><input type=checkbox value=ex></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+          </div>
+        </form>
+
+
+
+    </body>
+    
+    <div style="position:fixed; bottom:13%; left:-50; width:25%; margin-left:84.5%; text-align:left;">
+      <div>
+        <p>
+          <label class="btn" for="open-pop">새글</label>
+          <label class="btn" for="open-pop">수정</label>
+          <label class="btn"  for="open-pop" >삭제</label>
+          <a href="LKPmain.html"><label class="btn" >메인으로</label></a>
+        </p>
+      </div>
+      
+      
+      <input class="modal-state" id="open-pop" type="checkbox" />
+      <div class="modal">
+        <label class="modal_bg" for="open-pop"></label>
+        <div class="modal_inner">
+          <label class="modal_close" for="open-pop"></label>
+         
+          <p><img id=errorpic src="접근금지.png"></p>
+        </div>
+      </div>
+      
+      </div>
+  
+<div style="position:fixed; bottom:0; left:0; width:100%; padding:10px 0; border-top:1px solid #d7d5d5; text-align:center; background-color:#fbfafa;">
+<a href="#" target=notiframe>1</a>
+<a href="#" target=notiframe>2</a>
+<a href="#" target=notiframe>3</a>
+<a href="#" target=notiframe>4</a>
+<a href="#" target=notiframe>5</a>
+<a href="#" target=notiframe>다음</a><br>
+<form method=get action="https://www.google.co.kr/search?" target=newtab><input type=text name=query size=30 placeholder="Search">
+<select>&nbsp<option>선택<option>제목<option>내용<option>제목+내용 <pre></pre></div>	
+ </form> 
+</div></body>
+</html>

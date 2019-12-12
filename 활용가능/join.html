@@ -1,0 +1,171 @@
+﻿﻿<html>
+
+<head>
+
+<title> 회원가입 </title>
+
+<meta charset="UTF8">
+
+<style>
+h1 {text-align: center;}
+
+body{
+
+margin:0px;
+
+}
+
+#title{
+
+background-color:#6799FF;
+
+line-height:80px;
+
+}
+
+#for{
+
+background-color:#ffffff;
+
+border-radius:20px;
+
+width:60%;
+margin-left:400px;
+}
+
+#d1 {
+   display: inline-block;
+  margin-left:30%;
+   
+}
+</style>
+
+</head>
+
+<body bgcolor ="skyblue">
+
+
+
+
+
+
+<h1 id="title">회원가입</h2>
+   
+<form method=post action=test.php id="for"><br>
+   <div id=d1>
+       <ul type=square>
+<li>아이디 : <input type=text size=10 name=jsy_id><input type= button value="아이디중복확인"></li>
+
+<br></br>
+
+ 
+
+<li>비밀번호 : <input type=text size=10 name=jsy_ps
+
+    maxlength=40>영어or숫자 혼합 6자리이상</li><br>
+
+<li>비밀번호 확인 : <input type=text size=10 name=jsy_ps2 check
+
+    maxlength=40></li><br>
+
+<li>email : <input type=text size=20 name=jsy_email></li><br>
+
+<li>홈페이지 : <input type=text size=40 name=jsy_home
+
+   value="http://"></li><br>
+
+<li>전화번호 :  <select name=jsy_level>
+
+<option value=1>010</option> </select>
+
+ <input type=text size=4 name=jsy_phone2
+
+    maxlength=4>
+
+ <input type=text size=4 name=jsy_phone3
+
+    maxlength=4></li><br>
+
+<tr>
+
+   <td> <li>이메일</li> </td>
+
+   <td>
+
+    <input type = "text"/> @ <input type = "text"/> &nbsp;&nbsp;
+
+    <select name=jsy_email>
+
+     <option value=1> 직접입력 </option>
+
+     <option value=2> naver.com </option>
+
+     <option value=3> daum.net </option>
+
+     <option value=4> nate.com </option>
+
+    </select>
+
+   </td>
+
+  </tr><br>
+
+
+
+
+<li>주민등록번호 : <input type=text size=10 name=jsy_jumin>
+
+       <input type=text size=10 name=jsy_jumin2></li><br><br>
+
+<li>성별을 선택하시오<br>
+
+<input type=radio name=jsy_gender value="a" 
+
+   checked>남자<br>
+
+<input type=radio name=jsy_gender value="b"
+
+  >여자</li><br>
+
+</select><p>
+
+<li>가입경로를 선택하십시오
+
+<select name=jsy_join>
+
+<option value=1 selected>선택하세요</option>
+
+<option value=2>지인소개</option>
+
+<option value=3>기타검색</option>
+
+<option value=4>광고</option>
+
+<option value=5>동호회</option>
+
+<option value=6>카페경유</option>
+
+</select></li><p>
+
+<textarea name=comment rows=10 cols=74.9>
+
+  바라는점 적어주세요.
+
+</textarea><p>
+
+<a href="loginsucces.html"><INPUT type=button value=회원가입></a>
+   <INPUT type=reset value=취소>
+   </ul>
+   </div>
+
+
+
+
+
+</form>
+
+</center>
+
+</body>
+
+</html>

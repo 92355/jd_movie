@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+#menu_bar_1{
+top: 200px;
+width: 100%;
+height: 50px;
+background-color: white;
+background: #ef8443;
+}
+#menu_bar_2{   
+height: 50px;
+width: 100%; /*지역 짤림*/
+line-height: 50px;
+text-align: center;
+}
+
+#menu_bar_2 ul{
+margin: 0;
+padding: 0;
+ display: inline-block;
+margin: 0 auto;
+}
+#menu_bar_2 ul li{
+white-space:nowrap;
+list-style-type: none;
+display: inline-block;  
+font-family: 'Jeju Gothic',sans-serif; 
+position: relative;
+}
+#menu_bar_2 ul li:hover{
+background: #ea6657;
+}
+
+#menu_bar_2 ul li a{
+text-decoration: none;
+font-size: 20px;
+color: white;
+padding: 15px 47px;
+}
+.dropSubBody{
+width:1000px;
+margin: 0 auto;
+background-color: #ea6657;
+z-index: 5;
+display:none;
+}
+#menu_bar_2 ul:hover+.dropSubBody{
+display:block;
+}
+
+.dropSubBody ul{
+display:inline-block;
+}
+.dropSubBody ul li{
+list-style-type: none;
+}
+.dropSubBody ul li div{
+margin:20px 20px;
+}
+.dropSubBody ul li div a{
+vertical-align:top;
+text-decoration:none;
+display: block;
+line-height: 50px;
+}
+.dropSubBody ul li a:VISITED {
+color:#ffffff;
+}
+
+</style>
+</head>
+<body>
+<div id="menu_bar_1">
+<div id="menu_bar_2">               
+<ul>  
+<li><a href="#">메뉴</a></li>          
+<li><a href="./MovieIndex.mo">영화</a></li>
+<li><a href="#">연극</a></li>
+<li><a href="#">뮤지컬</a></li>
+<li><a href="#">콘서트</a></li>
+<li><a href="#">공연</a></li>
+<li><a href="#">지역</a></li>
+</ul>
+<div class="dropSubBody">
+<!-- 드롭 다운 버튼 -->                    
+<!-- 영화 -->
+<ul>
+<li>
+<div>
+<a href="#">상영작</a>
+<a href="#">예정작</a>
+<a href="#">영화 랭킹</a>
+<a href="#">예매</a>
+<a href="#">시사회/이벤트</a>
+<a href="#">평점/리뷰</a>
+</div>
+</li>
+</ul>
+<!-- 연극 -->
+<ul>
+<li>
+<div>
+<a href="#">전체</a>
+<a href="#">패키지공연</a>
+<a href="#">주간랭킹순</a>
+</div>
+</li>
+</ul>
+<!-- 뮤지컬 -->
+<ul>
+<li>
+<div>
+<a href="#">오리지널/내한공연</a>
+<a href="#">라이선스</a>
+<a href="#">창작뮤지컬</a>
+<a href="#">넌버벌 퍼포먼스</a>
+<a href="#">패키지공연</a>
+</div>
+</li>
+</ul>
+<!-- 콘서트 -->
+<ul>
+<li>
+<div>
+<a href="#">발라드</a>
+<a href="#">ROCK/메탈</a>
+<a href="#">랩/힙합</a>
+<a href="#">인디/뉴에이지</a>
+<a href="#">JAZZ/블루스</a>
+<a href="#">토크/강연</a>
+<a href="#">개그/마술/파티</a>
+</div>
+</li>
+</ul>
+<!-- 공연 -->
+<ul>
+<li>
+<div>
+<a href="#">클래식</a>
+<a href="#">오페라</a>
+<a href="#">발레/무용</a>
+<a href="#">국악</a>
+<a href="#">주간랭킹순</a>
+</div>
+</li>
+</ul>
+<ul>
+<li>
+<div>
+<a href="#">서울/경기</a>
+<a href="#">인천/강원</a>
+<a href="#">충북/충남</a>
+<a href="#">대전/경북</a>
+<a href="#">울산/부산</a>
+<a href="#">전북/전남</a>
+<a href="#">광주/제주</a>
+</div>
+</li>
+</ul>            
+<!-- 드롭 다운 버튼 마지막 -->
+</div>
+</div>
+</div>
+</body>
+</html>
